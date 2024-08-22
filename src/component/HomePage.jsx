@@ -1,8 +1,15 @@
 import React from 'react'
+import MainConsoleLayout from './template/MainConsoleLayout/MainConsoleLayout'
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <MainConsoleLayout
+      content={
+        <>
+          <p>testing</p>
+        </>
+      }
+    />
   )
 }
 
