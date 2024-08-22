@@ -11,6 +11,7 @@ const navigation = [
 	{ name: "Contact", href: "#contact" },
 ];
 
+
 const footerNavigation = {
 	solutions: [
 		{ name: "Marketing", href: "#/" },
@@ -110,8 +111,9 @@ const MainConsoleLayout = (props) => {
 		}
 	};
 
+
 	return (
-		<div className="bg-gray-900">
+		<div className="bg-gray-900 overflow-clip">
 			<header className="absolute inset-x-0 top-0 z-50">
 				<motion.nav
 					aria-label="Global"
