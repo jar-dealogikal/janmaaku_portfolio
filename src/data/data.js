@@ -259,16 +259,16 @@ export const companies = [
 export const workExperience = [
 	{
 		id: 1,
-		title: "Frontend Engineer Intern",
-		desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+		title: "Junior Frontend Engieer",
+		desc: "Primarily focus on frontend web development, responsiveness and updating new features, fixing bugs",
 		className: "md:col-span-2",
 		thumbnail:
 			"https://res.cloudinary.com/dqig7qaz7/image/upload/v1724292982/my_portfolio/profile/exp4_ykdl65.svg",
 	},
 	{
-		id: 2,
-		title: "Mobile App Dev - JSM Tech",
-		desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+		id: 2, 
+		title: "Mobile App Dev - FatTrack",
+		desc: "Designed and developed mobile app using Ionic React for capstone",
 		className: "md:col-span-2", // change to md:col-span-2
 		thumbnail:
 			"https://res.cloudinary.com/dqig7qaz7/image/upload/v1724292980/my_portfolio/profile/exp2_umw0tb.svg",
@@ -276,19 +276,19 @@ export const workExperience = [
 	{
 		id: 3,
 		title: "Freelance App Dev Project",
-		desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+		desc: "Developing capstone for those students who needs help.",
 		className: "md:col-span-2", // change to md:col-span-2
 		thumbnail:
 			"https://res.cloudinary.com/dqig7qaz7/image/upload/v1724292988/my_portfolio/profile/exp3_varnck.svg",
 	},
-	{
-		id: 4,
-		title: "Lead Frontend Developer",
-		desc: "Developed and maintained user-facing features using modern frontend technologies.",
-		className: "md:col-span-2",
-		thumbnail:
-			"https://res.cloudinary.com/dqig7qaz7/image/upload/v1724292982/my_portfolio/profile/exp4_ykdl65.svg",
-	},
+	// {
+	// 	id: 4,
+	// 	title: "Lead Frontend Developer",
+	// 	desc: "Developed and maintained user-facing features using modern frontend technologies.",
+	// 	className: "md:col-span-2",
+	// 	thumbnail:
+	// 		"https://res.cloudinary.com/dqig7qaz7/image/upload/v1724292982/my_portfolio/profile/exp4_ykdl65.svg",
+	// },
 ];
 
 export const socialMedia = [
