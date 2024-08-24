@@ -2,13 +2,13 @@ import React from "react";
 import { products } from "../data/data";
 
 const RecentProjectComp = () => {
-	const showLiveHandler = () => {
-		alert(`Comming Soon!`);
+	const showLiveHandler = (id) => {
+		alert(`Project ID: ${id} - Coming Soon!`);
 	};
+
 	return (
 		<>
-			{" "}
-			{/* my recents projects */}
+			{/* My recent projects */}
 			<div className="items-center mt-20" id="project">
 				<h1 className="text-5xl font-bold text-white text-center">
 					A small selection of{" "}
@@ -48,8 +48,8 @@ const RecentProjectComp = () => {
 											))}
 										</div>
 										<button
-											className="text-[#35c1db] cursor-pointer"
-											onClick={showLiveHandler}
+											className="text-[#35c1db] cursor-pointer z-50"
+											onClick={() => showLiveHandler(product.id)}
 										>
 											Show Live
 										</button>
