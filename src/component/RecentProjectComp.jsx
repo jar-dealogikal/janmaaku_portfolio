@@ -9,7 +9,7 @@ const RecentProjectComp = () => {
 	return (
 		<>
 			{/* My recent projects */}
-			<div className="items-center mt-20" id="project">
+			<div className="items-center mt-20 py-20" id="project">
 				<h1 className="text-5xl font-bold text-white text-center">
 					A small selection of{" "}
 					<span className="text-[#35c1db]">recent projects</span>

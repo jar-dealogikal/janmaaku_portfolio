@@ -78,7 +78,7 @@ const HomePage = () => {
 						/>
 					</div>
 
-					<div className="py-24 sm:py-32 lg:pb-4">
+					<section id="hero" className="py-24 sm:py-32 lg:pb-4">
 						<div
 							className="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col md:flex-row justify-center
              items-center"
@@ -126,7 +126,7 @@ const HomePage = () => {
 								/>
 							</div>
 						</div>
-					</div>
+					</section>
 					<div
 						aria-hidden="true"
 						className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
@@ -141,16 +141,21 @@ const HomePage = () => {
 					</div>
 
 					{/* grid section */}
-					<div
+					<section
 						id="about"
-						className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 text-white md:mx-16 md:mt-44 mt-10"
+						className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 text-white md:mx-16 md:mt-44 mt-10 py-16"
 					>
 						{/* Left column */}
-						<div className="relative">
+						<motion.div
+							className="relative bg-slate-400/15 p-2 rounded-md shadow-lg hover:shadow-[#35c1db]"
+							initial={{ x: -100, opacity: 0 }}
+							animate={{ x: 0, opacity: 1 }}
+							transition={{ duration: 0.8, ease: "easeOut" }}
+						>
 							<img
 								src="https://res.cloudinary.com/dqig7qaz7/image/upload/v1724292994/my_portfolio/profile/b1_c0ikr4.svg"
 								alt="Laptop showing Earth"
-								className="w-full h-[30rem] rounded-lg"
+								className="w-full h-[30rem] rounded-md"
 							/>
 							<div className="absolute md:bottom-4 left-11 bottom-10">
 								<h2 className="text-lg md:text-2xl font-bold">
@@ -158,12 +163,12 @@ const HomePage = () => {
 									communication
 								</h2>
 							</div>
-						</div>
+						</motion.div>
 
 						{/* Right column */}
 						<div className="space-y-4">
 							{/* Time zone section */}
-							<div className="bg-[#0e303e] p-4 rounded-lg relative h-44">
+							<div className="bg-[#0e303e] p-4 rounded-lg relative h-44 shadow-lg hover:shadow-[#35c1db]">
 								<h2 className="text-2xl font-semibold absolute inset-0 flex ml-5 items-center justify-center text-[#74dbec]">
 									I'm very flexible with time zone communications
 								</h2>
@@ -171,13 +176,13 @@ const HomePage = () => {
 							</div>
 
 							{/* Tech stack section */}
-							<div className="bg-[#bcfbff] p-4 rounded-lg relative h-72 flex flex-col justify-center">
+							<div className="bg-[#bcfbff]/10 p-4 rounded-lg relative h-72 flex flex-col justify-center shadow-lg hover:shadow-[#35c1db]">
 								<div className="flex flex-col md:flex-row justify-between px-8 items-center w-full">
 									<div className="text-center md:text-left mb-4 md:mb-0">
 										<p className="text-base text-[#74dbec]">
 											I constantly try to improve
 										</p>
-										<h2 className="text-4xl font-semibold text-indigo-900">
+										<h2 className="text-4xl font-semibold text-white">
 											My tech stack
 										</h2>
 									</div>
@@ -194,24 +199,27 @@ const HomePage = () => {
 								</div>
 							</div>
 						</div>
-					</div>
+					</section>
 
 					<div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 text-white md:mx-16">
 						{/* Right column */}
 						<div className="space-y-4">
 							{/* Time zone section */}
-							<div
+							<motion.div
 								className="p-4 rounded-lg relative h-44 lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 text-center bg-[#10132E]"
+                    lg:opacity-100 text-center bg-[#10132E] shadow-lg hover:shadow-[#35c1db]"
+								initial={{ x: -100, opacity: 0 }}
+								animate={{ x: 0, opacity: 1 }}
+								transition={{ duration: 0.8, ease: "easeOut" }}
 							>
 								<h2 className="text-2xl md:text-5xl font-semibold absolute inset-0 flex items-center justify-center text-[#74dbec]">
 									Tech enthusiast with a passion for development
 								</h2>
 								{/* Add globe icon here if needed */}
-							</div>
+							</motion.div>
 
 							{/* Tech stack section */}
-							<div className="bg-gray-700/20 p-4 rounded-lg relative h-72 flex flex-col justify-center overflow-hidden">
+							<div className="bg-gray-700/20 p-4 rounded-lg relative h-72 flex flex-col justify-center overflow-hidden shadow-lg hover:shadow-[#35c1db]">
 								<img
 									src="https://res.cloudinary.com/dqig7qaz7/image/upload/v1724292986/my_portfolio/profile/bg_l6owit.png"
 									alt="Background"
@@ -228,7 +236,7 @@ const HomePage = () => {
 									</div>
 
 									<button
-										className="relative flex px-16 gap-2 h-[3.5em] items-center border-3 border-[#149CEA] border-r-[#1884a2] outline-none bg-transparent text-white transition-all duration-1000 rounded-sm font-bold cursor-pointer hover:shadow-inner hover:shadow-[#1479EA] button-custom"
+										className="relative flex px-16 gap-2 h-[3.5em] items-center border-3 border-[#149CEA] border-r-[#1884a2] outline-none bg-transparent text-white transition-all duration-100 rounded-sm font-bold cursor-pointer hover:shadow-inner hover:shadow-[#1479EA] button-custom"
 										onClick={handleCopy}
 									>
 										{copied ? "Email is Copied!" : "Copy my email address"}
@@ -239,7 +247,7 @@ const HomePage = () => {
 						</div>
 
 						{/* Left column */}
-						<div className="relative items-center overflow-hidden bg-gray-700/15 rounded-lg">
+						<div className="relative items-center overflow-hidden bg-gray-700/15 rounded-lg shadow-lg hover:shadow-[#35c1db]">
 							<img
 								src="https://res.cloudinary.com/dqig7qaz7/image/upload/v1724292991/my_portfolio/profile/b5_lnfee1.svg"
 								alt="Laptop showing Earth"
@@ -287,7 +295,10 @@ const HomePage = () => {
 						</div>
 					</div>
 
-					<div className="mx-auto max-w-7xl sm:px-6 lg:px-8 text-center">
+					<div
+						className="mx-auto max-w-7xl sm:px-6 lg:px-8 text-center"
+						id="contact"
+					>
 						<div className="relative isolate overflow-hidden  px-6 py-24 shadow-2xl sm:rounded-3xl sm:px-24 xl:py-32">
 							<h1 className="md:text-7xl text-4xl text-white">
 								Ready to take your <span className="text-[#189eb9]">your</span>{" "}
