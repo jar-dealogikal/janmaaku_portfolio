@@ -104,7 +104,7 @@ export const projects = [
 	},
 ];
 
-export const products = [
+export const websites = [
 	{
 		id: 1,
 		title: "C1rk",
@@ -158,6 +158,25 @@ export const products = [
 	},
 	{
 		id: 4,
+		title: "Furniture Store",
+		href: "#",
+		description:
+			"Furniture refers to movable items like chairs, tables, and beds, designed to support various human activities, enhance comfort, and decorate living or working spaces.",
+		imageSrc:
+			"https://res.cloudinary.com/dqig7qaz7/image/upload/v1717742558/my_portfolio/images/428707216_3670341396544026_3809682686989056313_n_smwoa6.jpg",
+		imageAlt: "3D Solar System Planets to Explore",
+		avatars: [
+			"https://res.cloudinary.com/dqig7qaz7/image/upload/v1724292985/my_portfolio/profile/re_afyeco.svg",
+			"https://res.cloudinary.com/dqig7qaz7/image/upload/v1724309564/my_portfolio/profile/nodejs_r4iktq.png",
+			"https://res.cloudinary.com/dqig7qaz7/image/upload/v1724309591/my_portfolio/profile/figma_mu2yer.png",
+		],
+	},
+	// ... add similar structure for other products
+];
+
+export const mobile_app = [
+	{
+		id: 1,
 		title: "Aora",
 		href: "#",
 		description:
@@ -173,13 +192,13 @@ export const products = [
 		],
 	},
 	{
-		id: 5,
-		title: "Furniture Store",
+		id: 2,
+		title: "Fat Track",
 		href: "#",
 		description:
-			"Furniture refers to movable items like chairs, tables, and beds, designed to support various human activities, enhance comfort, and decorate living or working spaces.",
+			"Fat Track a mobile web app, it will track the teachers where they check-in and check-out implementing geolocation",
 		imageSrc:
-			"https://res.cloudinary.com/dqig7qaz7/image/upload/v1717742558/my_portfolio/images/428707216_3670341396544026_3809682686989056313_n_smwoa6.jpg",
+			"https://res.cloudinary.com/dqig7qaz7/image/upload/v1717742348/my_portfolio/images/Login_tqj7xe.png",
 		imageAlt: "3D Solar System Planets to Explore",
 		avatars: [
 			"https://res.cloudinary.com/dqig7qaz7/image/upload/v1724292985/my_portfolio/profile/re_afyeco.svg",
@@ -266,7 +285,7 @@ export const workExperience = [
 			"https://res.cloudinary.com/dqig7qaz7/image/upload/v1724292982/my_portfolio/profile/exp4_ykdl65.svg",
 	},
 	{
-		id: 2, 
+		id: 2,
 		title: "Mobile App Dev - FatTrack",
 		desc: "Designed and developed mobile app using Ionic React for capstone",
 		className: "md:col-span-2", // change to md:col-span-2

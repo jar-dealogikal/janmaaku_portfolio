@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { products } from "../data/data";
+import { mobile_app, websites } from "../data/data";
 import { motion, useInView } from "framer-motion";
 import NavTabComponent from "./template/NavTabComponent/NavTabComponent";
 import TableComponent from "./template/TableComponent/TableComponent";
@@ -83,14 +83,15 @@ const RecentProjectComp = () => {
 
 					{activeTab === "Website" && (
 						<TableComponent
-							tableData={products}
+							tableData={websites}
 							clickHandler={showLiveHandler}
 						/>
 					)}
 					{activeTab === "Mobile Application" && (
-						<h1 className="text-[#35c1db] text-center items-center text-xl py-10">
-							Coming Soon.....
-						</h1>
+						<TableComponent
+						tableData={mobile_app}
+						clickHandler={showLiveHandler}
+					/>
 					)}
 					{activeTab === "Games" && (
 						<h1 className="text-[#35c1db] text-center items-center text-xl py-10">
