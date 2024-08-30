@@ -19,7 +19,7 @@ function TypingEffect({ text, speed = 100 }) {
 		}
 	}, [index, text, speed]);
 
-	return (	
+	return (
 		<motion.h1
 			className="text-4xl font-bold tracking-tight text-white sm:text-6xl"
 			initial={{ opacity: 0 }}
@@ -226,17 +226,17 @@ const HomePage = () => {
 								</div>
 
 								{/* Tech stack section */}
-								<div className="bg-[#bcfbff]/10 p-4 rounded-lg relative h-72 flex flex-col justify-center shadow-lg hover:shadow-[#35c1db]">
-									<div className="flex flex-col md:flex-row justify-between px-8 items-center w-full">
+								<div className="bg-[#bcfbff]/10 p-4 rounded-lg relative h-72 flex justify-center shadow-lg hover:shadow-[#35c1db]">
+									<div className="flex justify-between md:px-8 items-center w-full">
 										<div className="text-center md:text-left mb-4 md:mb-0">
-											<p className="text-base text-[#74dbec]">
+											<p className="text-xs lg:text-base text-[#74dbec]">
 												I constantly try to improve
 											</p>
-											<h2 className="text-4xl font-semibold text-white">
+											<h2 className="text-xl md:text-4xl font-semibold text-white">
 												My tech stack
 											</h2>
 										</div>
-										<div className="grid grid-cols-2 gap-10 ml-10">
+										<div className="grid grid-cols-2 gap-5 md:gap-10 ml-10">
 											{myTechs.map((tech, index) => (
 												<span
 													key={index}
@@ -312,8 +312,7 @@ const HomePage = () => {
 						</div>
 					</ParallaxSection>
 
-						<RecentProjectComp />
-		
+					<RecentProjectComp />
 
 					{/* my work experience */}
 					<ParallaxSection>
