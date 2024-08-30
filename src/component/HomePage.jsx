@@ -19,7 +19,7 @@ function TypingEffect({ text, speed = 100 }) {
 		}
 	}, [index, text, speed]);
 
-	return (
+	return (	
 		<motion.h1
 			className="text-4xl font-bold tracking-tight text-white sm:text-6xl"
 			initial={{ opacity: 0 }}
