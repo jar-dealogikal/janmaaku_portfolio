@@ -361,6 +361,7 @@ const HomePage = () => {
 									Reach out to me today and let's discuss how I can help you
 									achieve your goals
 								</p>
+								{/* <FormComponent /> */}
 								<div className="mx-auto mt-10 flex max-w-md gap-x-4">
 									<button
 										className="py-4 text-[#189eb9] cursor-pointer justify-center flex gap-3 px-20 border hover:bg-[#189eb9] hover:text-white border-[#189eb9] w-96 mt-10 rounded-lg shadow-lg shadow-[#189eb9] hover:shadow-none"
@@ -399,6 +400,7 @@ const HomePage = () => {
 							</div>
 						</div>
 					</ParallaxSection>
+					
 				</>
 			}
 		/>
