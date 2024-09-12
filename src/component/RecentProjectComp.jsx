@@ -94,7 +94,7 @@ const RecentProjectComp = () => {
 					/>
 					)}
 					{activeTab === "Games" && (
-						<h1 className="text-[#35c1db] text-center items-center text-xl py-10">
+						<h1 className="text-[#35c1db] text-center items-center text-xl py-32">
 							Coming Soon.....
 						</h1>
 					)}

@@ -11,7 +11,7 @@ export default function TableComponent({ tableData, clickHandler }) {
 							<img
 								alt={item.imageAlt}
 								src={item.imageSrc}
-								className="h-full w-full object-cover object-center sm:h-full sm:w-full"
+								className="h-full w-full object-fit object-center sm:h-full sm:w-full"
 							/>
 						</div>
 						<div className="flex flex-1 flex-col space-y-2 p-4">
